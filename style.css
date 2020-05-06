@@ -1,0 +1,62 @@
+
+#viewport {
+    width: 100%;
+    position: absolute;
+}
+
+header {
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    
+}
+
+nav div {
+    display: inline-block;
+    background-color: khaki;
+    margin: 10px 10px 10px 10px;
+}
+
+nav #gmail {
+    display: inline-block;
+}
+
+#main {
+    display: block;
+    text-align: center;
+    background-color: beige;
+    margin-top: 90px;
+}
+
+#logo-container {
+    display: -webkit-inline-box;
+    text-align: -webkit-center;
+    position: relative;
+    padding: 30px 0px 30px 0px;
+}
+
+#logo-container img {
+    height: 92px;
+    width: 272px;
+}
+
+#search-bar {
+    padding: 0px 0px 30px 0px;
+}
+
+#search-bar input {
+    border-radius: 20px;
+    background-color:white;
+    width: 350px;
+    height: 30px
+
+}
+
+.search-button {
+    text-align: center;
+}
