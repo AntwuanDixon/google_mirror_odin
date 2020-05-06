@@ -9,11 +9,18 @@ header {
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: arial, sans-serif;
+    font-size: .8em;
+}
+
+nav #left-nav {
+    text-align: left;
+}
+
+nav #right-nav {
+    text-align: right;
 }
 
 nav div {
@@ -29,7 +36,7 @@ nav #gmail {
 #main {
     display: block;
     text-align: center;
-    background-color: beige;
+    background-color: white;
     margin-top: 90px;
 }
 
@@ -51,12 +58,29 @@ nav #gmail {
 
 #search-bar input {
     border-radius: 20px;
-    background-color:white;
-    width: 350px;
-    height: 30px
+    background-color:rgb(255, 255, 255);
+    width: 500px;
+    height: 40px;
+    border-color: rgb(212, 212, 212);
+    border-width: 1px;
+    border-style: solid;
 
 }
 
 .search-button {
     text-align: center;
+    border-color: lavender;
+    margin: 0px 5px 20px 5px;
+    height: 35px;
+    width: 130px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #5F6368;
+    border-radius: 4px;
+    background-color: rgb(241, 241, 241);
+}
+
+#search-bar input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
 }
