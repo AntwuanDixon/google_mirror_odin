@@ -17,10 +17,9 @@ nav {
 }
 
 nav #left-nav {
-    display: inline-block;
-    text-align: center;
-    text-align: left;
-    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav #right-nav {
@@ -29,30 +28,33 @@ nav #right-nav {
     justify-content: space-between;
 }
 
-nav div {
-    border: 1px #ccc solid;
+#blank-space-1 {
+    flex: 20;
 }
 
-#blank-space {
-    flex: 10;
+#blank-space-2 {
+    flex: 20;
 }
 
 #gmail-link {
-    flex: 1;
+    flex: 1.5;
 }
 
 #img-link {
-    flex: 1;
+    flex: 1.5;
 }
 
 #grid-img {
-    flex: 1;
+    flex: .5;
+}
+
+#sign-in-button {
+    flex: 2;
 }
 
 #grid-img img {
     width: 20px;
     align-self: center;
-    
 }
 
 #main {
@@ -70,8 +72,19 @@ nav div {
 }
 
 #logo-container img {
-    height: 119px;
-    width: 353px;
+    height: 92px;
+    width: 272px;
+}
+
+#sign-in-button button {
+    background-color: royalblue;
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    width: 70px;
+    height: 30px;
 }
 
 #search-bar {
@@ -81,12 +94,16 @@ nav div {
 #search-bar input {
     border-radius: 20px;
     background-color:rgb(255, 255, 255);
-    width: 500px;
+    width: 550px;
     height: 40px;
     border-color: rgb(212, 212, 212);
     border-width: 1px;
     border-style: solid;
+}
 
+#search-bar input:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
 }
 
 .search-button {
@@ -102,7 +119,45 @@ nav div {
     background-color: rgb(241, 241, 241);
 }
 
-#search-bar input:hover {
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-    border-color: rgba(223,225,229,0);
+.search-button:hover {
+    border-color:lightslategrey;
+    color:black;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(235, 235, 235);
+    font-family: arial, sans-serif;
+    font-size: .8em;
+}
+
+.footer-link {
+    padding: 15px;
+    font-size: 1.1em;
+    color: rgb(100, 102, 104);
+}
+
+footer #left-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer #right-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#advertising-link {
+    margin-left: 20px;
+}
+
+#settings-link {
+    margin-right: 20px;
 }
