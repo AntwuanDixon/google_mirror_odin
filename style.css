@@ -4,33 +4,55 @@
     position: absolute;
 }
 
-header {
-
-}
-
 nav {
     display: grid;
     grid-template-columns: 50% 50%;
     font-family: arial, sans-serif;
     font-size: .8em;
+    margin: 0px 10px 20px 10px;
+}
+
+.header-link {
+    padding: 10px;
 }
 
 nav #left-nav {
+    display: inline-block;
+    text-align: center;
     text-align: left;
+    padding-top: 5px;
 }
 
 nav #right-nav {
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav div {
-    display: inline-block;
-    background-color: khaki;
-    margin: 10px 10px 10px 10px;
+    border: 1px #ccc solid;
 }
 
-nav #gmail {
-    display: inline-block;
+#blank-space {
+    flex: 10;
+}
+
+#gmail-link {
+    flex: 1;
+}
+
+#img-link {
+    flex: 1;
+}
+
+#grid-img {
+    flex: 1;
+}
+
+#grid-img img {
+    width: 20px;
+    align-self: center;
+    
 }
 
 #main {
@@ -48,8 +70,8 @@ nav #gmail {
 }
 
 #logo-container img {
-    height: 92px;
-    width: 272px;
+    height: 119px;
+    width: 353px;
 }
 
 #search-bar {
